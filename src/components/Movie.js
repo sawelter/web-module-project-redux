@@ -1,12 +1,23 @@
 import React from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { deleteMovie } from '../actions/movieActions';
+
+// TODO: * [ ] **Find the HTML element that should trigger a deletion in the movie component.** Create and connect the necessary event handlers to call deleteMovie on the current movie's id. After setting the state, redirect the user using the push('/movies') command.
+
 
 const Movie = (props) => {
     const { id } = useParams();
     const { push } = useHistory();
 
     const movie = props.movies.find(movie=>movie.id===Number(id));
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        props.deleteMovie(id);
+        push('/movies');
+
+    }
     
     return(<div className="modal-page col">
         <div className="modal-dialog">
@@ -38,7 +49,7 @@ const Movie = (props) => {
                         
                         <section>
                             <span className="m-2 btn btn-dark">Favorite</span>
-                            <span className="delete"><input type="button" className="m-2 btn btn-danger" value="Delete"/></span>
+                            <span className="delete"><input type="button" className="m-2 btn btn-danger" value="Delete" onClick={handleClick}/></span>
                         </section>
                     </div>
                 </div>
@@ -53,4 +64,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, {})(Movie);
+export default connect(mapStateToProps, {deleteMovie})(Movie);
