@@ -17,28 +17,28 @@ In this project, you take a fairly complex application used to search a movie da
 
 ## Instructions
 ### Task 1: Project Set Up
-* [ ] Create a forked copy of this project.
-* [ ] Clone your OWN version of the repository in your terminal
-* [ ] cd into the project base directory `cd web-module-project-redux`
-* [ ] Download project dependencies by running `npm install``
-* [ ] Start up the app using `npm start`
+* [X] Create a forked copy of this project.
+* [X] Clone your OWN version of the repository in your terminal
+* [X] cd into the project base directory `cd web-module-project-redux`
+* [X] Download project dependencies by running `npm install``
+* [X] Start up the app using `npm start`
 
 ### Task 2: Project Requirements
 #### Setup Redux
 > *The DOM and movie reducer has been provided for you, but it's up to to connect it to redux...*
 
-* [ ] In index.js, make use of the createStore method and Provider component to link your App to redux.
+* [X] In index.js, make use of the createStore method and Provider component to link your App to redux.
 
 #### Connecting the Movie reducer
 > *Within the reducers folder is the movieReducers file. We have the state already setup it up here with some initial data. Let's connect that state to our component.*
 
-* [ ] **In movieReducer.js, make sure that we are setting our state by default to initialState.** Otherwise your state will not have the original structure it needs to function!
+* [X] **In movieReducer.js, make sure that we are setting our state by default to initialState.** Otherwise your state will not have the original structure it needs to function!
 
-* [ ] **The MovieList component prints all of our movies to the screen.** Use the connect method here to map the movies state value into props. Replace our static movie variable with that prop.
+* [X] **The MovieList component prints all of our movies to the screen.** Use the connect method here to map the movies state value into props. Replace our static movie variable with that prop.
 
-* [ ] **The Movie component needs to access our list of movies to function.** Map movies to props here as well.
+* [X] **The Movie component needs to access our list of movies to function.** Map movies to props here as well.
 
-* [ ] **Finally, MovieHeader uses appTitle to display the title text.** Connect this component to appTitle and test appTitle is correctly displayed in your app.
+* [X] **Finally, MovieHeader uses appTitle to display the title text.** Connect this component to appTitle and test appTitle is correctly displayed in your app.
 
 
 #### Connecting the Delete and Add Movie actions
