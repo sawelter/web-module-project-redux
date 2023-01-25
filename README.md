@@ -60,27 +60,27 @@ In this project, you take a fairly complex application used to search a movie da
 #### Build out the favorites reducer
 > *Alright! Now that the movie reducer is complete, you have the chance to build a reducer from scratch to handle favorite movie functionality. We will also work on combining reducers.*
 
-* [ ] Create a reducer file for handling business logic for favorites. Include the following state values in your initialState setup:
+* [X] Create a reducer file for handling business logic for favorites. Include the following state values in your initialState setup:
   -  favorites: an array of movie objects
   -  displayFavorites: a boolean that holds if favorite elements should be displayed in app
 
-* [ ] **Import your new reducer file into the ./reducers/index.js file.** As a start, only add a default case to the switch statement.
+* [X] **Import your new reducer file into the ./reducers/index.js file.** As a start, only add a default case to the switch statement.
 
-* [ ] **In reducers/index.js, use the combineReducers method to connect both movies and favorite movies to redux.**
+* [X] **In reducers/index.js, use the combineReducers method to connect both movies and favorite movies to redux.**
 
-* [ ] **Notice that your movie functions no longer work. Why?** Make changes necessary to get the component connected to the movie reducer working again.
+* [X] **Notice that your movie functions no longer work. Why?** Make changes necessary to get the component connected to the movie reducer working again.
 
-* [ ] Connect the favorites state to the FavoriteMovieList component and test.
+* [X] Connect the favorites state to the FavoriteMovieList component and test.
 
-* [ ] Connect the displayFavorites state to the Movie and MovieHeader component.
+* [X] Connect the displayFavorites state to the Movie and MovieHeader component.
 
 #### Build out the favorites actions
 > *Now is your chance to build our all the rest of the app on your own. You can do this!*
 
 1. Add in reducer cases, action creators and event handler code for the following actions:
-  - toggleFavorites : Switches the displayFavorites state value between true and false. When displayFavorites is true, the favorite button does not show on the Movie page.
+  [X] toggleFavorites : Switches the displayFavorites state value between true and false. When displayFavorites is true, the favorite button does not show on the Movie page.
   
-  - addFavorites: Adds in a new movie object into the favorites list.
+  [X] addFavorites: Adds in a new movie object into the favorites list.
   - removeFavorite: Removes a movie Object from the favorites list with an id passed in.
 
 ### Stretch goals
